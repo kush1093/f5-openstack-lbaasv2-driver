@@ -542,7 +542,7 @@ class LBaaSv2PluginCallbacksRPC(object):
                 port_data[portbindings.VNIC_TYPE] = vnic_type
                 port_data[portbindings.PROFILE] = binding_profile
 
-                #if ('binding:capabilities' in
+                # if ('binding:capabilities' in
                 #        portbindings.EXTENDED_ATTRIBUTES_2_0['ports']):
                 #    port_data['binding:capabilities'] = {
                 #        'port_filter': False}
@@ -706,8 +706,8 @@ class LBaaSv2PluginCallbacksRPC(object):
             port_data[portbindings.VNIC_TYPE] = vnic_type
             port_data[portbindings.PROFILE] = binding_profile
 
-            #extended_attrs = portbindings.EXTENDED_ATTRIBUTES_2_0['ports']
-            #if 'binding:capabilities' in extended_attrs:
+            # extended_attrs = portbindings.EXTENDED_ATTRIBUTES_2_0['ports']
+            # if 'binding:capabilities' in extended_attrs:
             #    port_data['binding:capabilities'] = {'port_filter': False}
             port = self.driver.plugin.db._core_plugin.create_port(
                 context, {'port': port_data})
